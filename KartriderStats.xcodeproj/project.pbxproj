@@ -3,16 +3,29 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		113FBFB5252845F300DFF932 /* KartriderStatsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113FBFB4252845F300DFF932 /* KartriderStatsApp.swift */; };
+		113FBFB5252845F300DFF932 /* KartriderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113FBFB4252845F300DFF932 /* KartriderApp.swift */; };
 		113FBFB7252845F300DFF932 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113FBFB6252845F300DFF932 /* ContentView.swift */; };
 		113FBFB9252845F600DFF932 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 113FBFB8252845F600DFF932 /* Assets.xcassets */; };
 		113FBFBC252845F600DFF932 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 113FBFBB252845F600DFF932 /* Preview Assets.xcassets */; };
 		113FBFC7252845F600DFF932 /* KartriderStatsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113FBFC6252845F600DFF932 /* KartriderStatsTests.swift */; };
 		113FBFD2252845F600DFF932 /* KartriderStatsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113FBFD1252845F600DFF932 /* KartriderStatsUITests.swift */; };
+		113FBFE325284C6D00DFF932 /* Resources.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 113FBFE225284C6D00DFF932 /* Resources.xcassets */; };
+		113FBFF6252852AA00DFF932 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 113FBFF5252852AA00DFF932 /* CombineMoya */; };
+		113FC002252852EE00DFF932 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113FC001252852EE00DFF932 /* Constants.swift */; };
+		113FC0072528559300DFF932 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113FC0062528559300DFF932 /* Users.swift */; };
+		113FC00D252856AD00DFF932 /* UnexpectError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113FC00C252856AD00DFF932 /* UnexpectError.swift */; };
+		113FC015252861D400DFF932 /* Matches.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113FC014252861D400DFF932 /* Matches.swift */; };
+		113FC01B2528633900DFF932 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113FC01A2528633900DFF932 /* User.swift */; };
+		113FC02B252863C300DFF932 /* Matche.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113FC02A252863C300DFF932 /* Matche.swift */; };
+		113FC031252866FF00DFF932 /* String+Bool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113FC030252866FF00DFF932 /* String+Bool.swift */; };
+		113FC0392528694A00DFF932 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113FC0382528694A00DFF932 /* Player.swift */; };
+		113FC03E25286BD700DFF932 /* MatchInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113FC03D25286BD700DFF932 /* MatchInfo.swift */; };
+		113FC043252873EE00DFF932 /* MoyaProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113FC042252873EE00DFF932 /* MoyaProvider.swift */; };
+		113FC0482528776C00DFF932 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113FC0472528776C00DFF932 /* NetworkError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +47,7 @@
 
 /* Begin PBXFileReference section */
 		113FBFB1252845F300DFF932 /* KartriderStats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KartriderStats.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		113FBFB4252845F300DFF932 /* KartriderStatsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KartriderStatsApp.swift; sourceTree = "<group>"; };
+		113FBFB4252845F300DFF932 /* KartriderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KartriderApp.swift; sourceTree = "<group>"; };
 		113FBFB6252845F300DFF932 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		113FBFB8252845F600DFF932 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		113FBFBB252845F600DFF932 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -45,6 +58,18 @@
 		113FBFCD252845F600DFF932 /* KartriderStatsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KartriderStatsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		113FBFD1252845F600DFF932 /* KartriderStatsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KartriderStatsUITests.swift; sourceTree = "<group>"; };
 		113FBFD3252845F600DFF932 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		113FBFE225284C6D00DFF932 /* Resources.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Resources.xcassets; sourceTree = "<group>"; };
+		113FC001252852EE00DFF932 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		113FC0062528559300DFF932 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		113FC00C252856AD00DFF932 /* UnexpectError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnexpectError.swift; sourceTree = "<group>"; };
+		113FC014252861D400DFF932 /* Matches.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matches.swift; sourceTree = "<group>"; };
+		113FC01A2528633900DFF932 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		113FC02A252863C300DFF932 /* Matche.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matche.swift; sourceTree = "<group>"; };
+		113FC030252866FF00DFF932 /* String+Bool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Bool.swift"; sourceTree = "<group>"; };
+		113FC0382528694A00DFF932 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		113FC03D25286BD700DFF932 /* MatchInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchInfo.swift; sourceTree = "<group>"; };
+		113FC042252873EE00DFF932 /* MoyaProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaProvider.swift; sourceTree = "<group>"; };
+		113FC0472528776C00DFF932 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				113FBFF6252852AA00DFF932 /* CombineMoya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,11 +121,17 @@
 		113FBFB3252845F300DFF932 /* KartriderStats */ = {
 			isa = PBXGroup;
 			children = (
-				113FBFB4252845F300DFF932 /* KartriderStatsApp.swift */,
+				113FC02F252866F000DFF932 /* Extensions */,
+				113FC019252861F300DFF932 /* Model */,
+				113FC00B2528567C00DFF932 /* Error */,
+				113FBFFD252852CF00DFF932 /* Network */,
+				113FBFB4252845F300DFF932 /* KartriderApp.swift */,
 				113FBFB6252845F300DFF932 /* ContentView.swift */,
 				113FBFB8252845F600DFF932 /* Assets.xcassets */,
 				113FBFBD252845F600DFF932 /* Info.plist */,
 				113FBFBA252845F600DFF932 /* Preview Content */,
+				113FBFE225284C6D00DFF932 /* Resources.xcassets */,
+				113FC001252852EE00DFF932 /* Constants.swift */,
 			);
 			path = KartriderStats;
 			sourceTree = "<group>";
@@ -130,6 +162,44 @@
 			path = KartriderStatsUITests;
 			sourceTree = "<group>";
 		};
+		113FBFFD252852CF00DFF932 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				113FC0062528559300DFF932 /* Users.swift */,
+				113FC014252861D400DFF932 /* Matches.swift */,
+				113FC042252873EE00DFF932 /* MoyaProvider.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		113FC00B2528567C00DFF932 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				113FC00C252856AD00DFF932 /* UnexpectError.swift */,
+				113FC0472528776C00DFF932 /* NetworkError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		113FC019252861F300DFF932 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				113FC01A2528633900DFF932 /* User.swift */,
+				113FC02A252863C300DFF932 /* Matche.swift */,
+				113FC0382528694A00DFF932 /* Player.swift */,
+				113FC03D25286BD700DFF932 /* MatchInfo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		113FC02F252866F000DFF932 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				113FC030252866FF00DFF932 /* String+Bool.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +216,9 @@
 			dependencies = (
 			);
 			name = KartriderStats;
+			packageProductDependencies = (
+				113FBFF5252852AA00DFF932 /* CombineMoya */,
+			);
 			productName = KartriderStats;
 			productReference = 113FBFB1252845F300DFF932 /* KartriderStats.app */;
 			productType = "com.apple.product-type.application";
@@ -192,6 +265,11 @@
 		113FBFA9252845F300DFF932 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					character,
+					kart,
+					track,
+				);
 				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
@@ -217,6 +295,9 @@
 				Base,
 			);
 			mainGroup = 113FBFA8252845F300DFF932;
+			packageReferences = (
+				113FBFF4252852AA00DFF932 /* XCRemoteSwiftPackageReference "Moya" */,
+			);
 			productRefGroup = 113FBFB2252845F300DFF932 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,6 +314,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				113FBFE325284C6D00DFF932 /* Resources.xcassets in Resources */,
 				113FBFBC252845F600DFF932 /* Preview Assets.xcassets in Resources */,
 				113FBFB9252845F600DFF932 /* Assets.xcassets in Resources */,
 			);
@@ -259,8 +341,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				113FC0072528559300DFF932 /* Users.swift in Sources */,
+				113FC03E25286BD700DFF932 /* MatchInfo.swift in Sources */,
+				113FC02B252863C300DFF932 /* Matche.swift in Sources */,
+				113FC031252866FF00DFF932 /* String+Bool.swift in Sources */,
+				113FC015252861D400DFF932 /* Matches.swift in Sources */,
 				113FBFB7252845F300DFF932 /* ContentView.swift in Sources */,
-				113FBFB5252845F300DFF932 /* KartriderStatsApp.swift in Sources */,
+				113FC00D252856AD00DFF932 /* UnexpectError.swift in Sources */,
+				113FBFB5252845F300DFF932 /* KartriderApp.swift in Sources */,
+				113FC002252852EE00DFF932 /* Constants.swift in Sources */,
+				113FC0392528694A00DFF932 /* Player.swift in Sources */,
+				113FC0482528776C00DFF932 /* NetworkError.swift in Sources */,
+				113FC043252873EE00DFF932 /* MoyaProvider.swift in Sources */,
+				113FC01B2528633900DFF932 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -580,6 +673,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		113FBFF4252852AA00DFF932 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				branch = development;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		113FBFF5252852AA00DFF932 /* CombineMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 113FBFF4252852AA00DFF932 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = CombineMoya;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 113FBFA9252845F300DFF932 /* Project object */;
 }
