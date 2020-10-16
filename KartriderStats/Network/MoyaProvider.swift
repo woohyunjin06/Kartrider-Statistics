@@ -8,9 +8,8 @@
 import Combine
 import Foundation
 
-import Moya
 import CombineMoya
-
+import Moya
 
 class MoyaProvider<Target>: Moya.MoyaProvider<Target> where Target: TargetType {
     func request<R: Decodable>(_ target: Target, type: R.Type) -> AnyPublisher<Response<R>, Error> {
