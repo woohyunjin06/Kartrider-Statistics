@@ -9,18 +9,9 @@ import SwiftUI
 
 struct HomeContentView: View {
     
+    @ObservedObject var viewModel: HomeViewModel
+    
     @State var nickname: String = ""
-    
-    @ObservedObject var viewModel: HomeViewModel = .init()
-    
-    init() {
-        if #available(iOS 14.0, *) {
-            } else {
-                UITableView.appearance().tableFooterView = UIView()
-            }
-
-            UITableView.appearance().separatorStyle = .none
-    }
     
     var body: some View {
         GeometryReader { geometry in
@@ -37,10 +28,11 @@ struct HomeContentView: View {
                         
                         VStack(spacing: 0) {
                             Spacer()
-                            TextField(
-                                "유저명 검색",
-                                text: $nickname
-                            )
+                            TextField("플레이스홀더", text: $nickname, onEditingChanged: { change in
+                                
+                            }, onCommit: {
+                                
+                            })
                             .frame(
                                 height: 50
                             )
@@ -118,6 +110,6 @@ struct FavoriteUserRow: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeContentView()
+        HomeContentView(viewModel: HomeViewModel())
     }
 }

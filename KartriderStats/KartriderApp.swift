@@ -11,7 +11,7 @@ import SwiftUI
 struct KartriderApp: App {
     var body: some Scene {
         WindowGroup {
-            HomeContentView()
+            HomeContentView(viewModel: HomeViewModel())
         }
     }
 }

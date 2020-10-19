@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1107F9CC253C8F7600FEF77A /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1107F9CB253C8F7600FEF77A /* UserService.swift */; };
 		113FBFB5252845F300DFF932 /* KartriderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113FBFB4252845F300DFF932 /* KartriderApp.swift */; };
 		113FBFB7252845F300DFF932 /* HomeContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113FBFB6252845F300DFF932 /* HomeContentView.swift */; };
 		113FBFB9252845F600DFF932 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 113FBFB8252845F600DFF932 /* Assets.xcassets */; };
@@ -17,7 +18,6 @@
 		113FBFF6252852AA00DFF932 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 113FBFF5252852AA00DFF932 /* CombineMoya */; };
 		113FC002252852EE00DFF932 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113FC001252852EE00DFF932 /* Constants.swift */; };
 		113FC0072528559300DFF932 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113FC0062528559300DFF932 /* Users.swift */; };
-		113FC00D252856AD00DFF932 /* UnexpectError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113FC00C252856AD00DFF932 /* UnexpectError.swift */; };
 		113FC015252861D400DFF932 /* Matches.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113FC014252861D400DFF932 /* Matches.swift */; };
 		113FC01B2528633900DFF932 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113FC01A2528633900DFF932 /* User.swift */; };
 		113FC02B252863C300DFF932 /* Matche.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113FC02A252863C300DFF932 /* Matche.swift */; };
@@ -48,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1107F9CB253C8F7600FEF77A /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		113FBFB1252845F300DFF932 /* KartriderStats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KartriderStats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		113FBFB4252845F300DFF932 /* KartriderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KartriderApp.swift; sourceTree = "<group>"; };
 		113FBFB6252845F300DFF932 /* HomeContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContentView.swift; sourceTree = "<group>"; };
@@ -63,7 +64,6 @@
 		113FBFE225284C6D00DFF932 /* Resources.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Resources.xcassets; sourceTree = "<group>"; };
 		113FC001252852EE00DFF932 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		113FC0062528559300DFF932 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
-		113FC00C252856AD00DFF932 /* UnexpectError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnexpectError.swift; sourceTree = "<group>"; };
 		113FC014252861D400DFF932 /* Matches.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matches.swift; sourceTree = "<group>"; };
 		113FC01A2528633900DFF932 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		113FC02A252863C300DFF932 /* Matche.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matche.swift; sourceTree = "<group>"; };
@@ -102,6 +102,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1107F9CA253C8F3700FEF77A /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				113FC01A2528633900DFF932 /* User.swift */,
+				113FC02A252863C300DFF932 /* Matche.swift */,
+				113FC0382528694A00DFF932 /* Player.swift */,
+				113FC03D25286BD700DFF932 /* MatchInfo.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		1107F9D4253C901900FEF77A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				1107F9CB253C8F7600FEF77A /* UserService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		113FBFA8252845F300DFF932 = {
 			isa = PBXGroup;
 			children = (
@@ -179,7 +198,6 @@
 		113FC00B2528567C00DFF932 /* Error */ = {
 			isa = PBXGroup;
 			children = (
-				113FC00C252856AD00DFF932 /* UnexpectError.swift */,
 				113FC0472528776C00DFF932 /* NetworkError.swift */,
 			);
 			path = Error;
@@ -188,10 +206,8 @@
 		113FC019252861F300DFF932 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				113FC01A2528633900DFF932 /* User.swift */,
-				113FC02A252863C300DFF932 /* Matche.swift */,
-				113FC0382528694A00DFF932 /* Player.swift */,
-				113FC03D25286BD700DFF932 /* MatchInfo.swift */,
+				1107F9CA253C8F3700FEF77A /* Entities */,
+				1107F9D4253C901900FEF77A /* Service */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -204,11 +220,28 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		118D686F253C95BB0088164A /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				118D6870253C95C60088164A /* Home */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		118D6870253C95C60088164A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				113FBFB6252845F300DFF932 /* HomeContentView.swift */,
+				1179AD4F2528CF5E00967960 /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		11D4E8BE2528A31A0078D483 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				118D686F253C95BB0088164A /* Scene */,
 				11E4CF892528BD2400418DE7 /* Custom */,
-				113FBFB6252845F300DFF932 /* HomeContentView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -217,7 +250,6 @@
 			isa = PBXGroup;
 			children = (
 				11E4CF8A2528BD3200418DE7 /* RoundedCorner.swift */,
-				1179AD4F2528CF5E00967960 /* HomeViewModel.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -370,11 +402,11 @@
 				113FC015252861D400DFF932 /* Matches.swift in Sources */,
 				113FBFB7252845F300DFF932 /* HomeContentView.swift in Sources */,
 				11E4CF8B2528BD3200418DE7 /* RoundedCorner.swift in Sources */,
-				113FC00D252856AD00DFF932 /* UnexpectError.swift in Sources */,
 				113FBFB5252845F300DFF932 /* KartriderApp.swift in Sources */,
 				113FC002252852EE00DFF932 /* Constants.swift in Sources */,
 				113FC0392528694A00DFF932 /* Player.swift in Sources */,
 				113FC0482528776C00DFF932 /* NetworkError.swift in Sources */,
+				1107F9CC253C8F7600FEF77A /* UserService.swift in Sources */,
 				113FC043252873EE00DFF932 /* MoyaProvider.swift in Sources */,
 				1179AD502528CF5E00967960 /* HomeViewModel.swift in Sources */,
 				113FC01B2528633900DFF932 /* User.swift in Sources */,
