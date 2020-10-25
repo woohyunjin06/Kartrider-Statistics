@@ -1,0 +1,855 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1195BE3325453FCB0072EEDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1195BE3225453FCB0072EEDE /* AppDelegate.swift */; };
+		1195BE3525453FCB0072EEDE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1195BE3425453FCB0072EEDE /* SceneDelegate.swift */; };
+		1195BE3925453FCD0072EEDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1195BE3825453FCD0072EEDE /* Assets.xcassets */; };
+		1195BE3C25453FCD0072EEDE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1195BE3B25453FCD0072EEDE /* Preview Assets.xcassets */; };
+		1195BE3F25453FCD0072EEDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1195BE3D25453FCD0072EEDE /* LaunchScreen.storyboard */; };
+		1195BE4A25453FCD0072EEDE /* KartriderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1195BE4925453FCD0072EEDE /* KartriderTests.swift */; };
+		1195BE5525453FCE0072EEDE /* KartriderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1195BE5425453FCE0072EEDE /* KartriderUITests.swift */; };
+		1195BE7E2545402E0072EEDE /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1195BE7A2545402E0072EEDE /* HomeViewModel.swift */; };
+		1195BE7F2545402E0072EEDE /* HomeContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1195BE7B2545402E0072EEDE /* HomeContentView.swift */; };
+		1195BE802545402E0072EEDE /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1195BE7D2545402E0072EEDE /* RoundedCorner.swift */; };
+		1195BE9D2545403F0072EEDE /* Assembler+Then.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1195BE852545403E0072EEDE /* Assembler+Then.swift */; };
+		1195BE9E2545403F0072EEDE /* String+Bool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1195BE862545403E0072EEDE /* String+Bool.swift */; };
+		1195BE9F2545403F0072EEDE /* DProvider+ForceUnwrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1195BE872545403E0072EEDE /* DProvider+ForceUnwrap.swift */; };
+		1195BEA02545403F0072EEDE /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1195BE892545403E0072EEDE /* NetworkError.swift */; };
+		1195BEA12545403F0072EEDE /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1195BE8B2545403E0072EEDE /* Users.swift */; };
+		1195BEA22545403F0072EEDE /* Matches.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1195BE8C2545403E0072EEDE /* Matches.swift */; };
+		1195BEA32545403F0072EEDE /* MoyaProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1195BE8D2545403E0072EEDE /* MoyaProvider.swift */; };
+		1195BEA42545403F0072EEDE /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1195BE902545403F0072EEDE /* ServiceAssembly.swift */; };
+		1195BEA52545403F0072EEDE /* ViewModelAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1195BE912545403F0072EEDE /* ViewModelAssembly.swift */; };
+		1195BEA62545403F0072EEDE /* MoyaAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1195BE922545403F0072EEDE /* MoyaAssembly.swift */; };
+		1195BEA72545403F0072EEDE /* CompositionRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1195BE932545403F0072EEDE /* CompositionRoot.swift */; };
+		1195BEA82545403F0072EEDE /* Assembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1195BE942545403F0072EEDE /* Assembler.swift */; };
+		1195BEA92545403F0072EEDE /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1195BE972545403F0072EEDE /* UserService.swift */; };
+		1195BEAA2545403F0072EEDE /* MatchInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1195BE992545403F0072EEDE /* MatchInfo.swift */; };
+		1195BEAB2545403F0072EEDE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1195BE9A2545403F0072EEDE /* User.swift */; };
+		1195BEAC2545403F0072EEDE /* Matche.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1195BE9B2545403F0072EEDE /* Matche.swift */; };
+		1195BEAD2545403F0072EEDE /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1195BE9C2545403F0072EEDE /* Player.swift */; };
+		1195BEB22545405F0072EEDE /* Resources.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1195BEB12545405E0072EEDE /* Resources.xcassets */; };
+		1195BEB82545411E0072EEDE /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 1195BEB72545411E0072EEDE /* CombineMoya */; };
+		1195BEBE254545C80072EEDE /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 1195BEBD254545C80072EEDE /* Then */; };
+		1195BEC4254546150072EEDE /* Dip in Frameworks */ = {isa = PBXBuildFile; productRef = 1195BEC3254546150072EEDE /* Dip */; };
+		1195BECC254546DC0072EEDE /* UIHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1195BECB254546DC0072EEDE /* UIHostingController.swift */; };
+		1195BED125454D680072EEDE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1195BED025454D680072EEDE /* Constants.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1195BE4625453FCD0072EEDE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1195BE2725453FCB0072EEDE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1195BE2E25453FCB0072EEDE;
+			remoteInfo = Kartrider;
+		};
+		1195BE5125453FCE0072EEDE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1195BE2725453FCB0072EEDE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1195BE2E25453FCB0072EEDE;
+			remoteInfo = Kartrider;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1195BE2F25453FCB0072EEDE /* Kartrider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kartrider.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1195BE3225453FCB0072EEDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1195BE3425453FCB0072EEDE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1195BE3825453FCD0072EEDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1195BE3B25453FCD0072EEDE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1195BE3E25453FCD0072EEDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1195BE4025453FCD0072EEDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1195BE4525453FCD0072EEDE /* KartriderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KartriderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1195BE4925453FCD0072EEDE /* KartriderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KartriderTests.swift; sourceTree = "<group>"; };
+		1195BE4B25453FCD0072EEDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1195BE5025453FCE0072EEDE /* KartriderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KartriderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1195BE5425453FCE0072EEDE /* KartriderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KartriderUITests.swift; sourceTree = "<group>"; };
+		1195BE5625453FCE0072EEDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1195BE7A2545402E0072EEDE /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		1195BE7B2545402E0072EEDE /* HomeContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeContentView.swift; sourceTree = "<group>"; };
+		1195BE7D2545402E0072EEDE /* RoundedCorner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
+		1195BE852545403E0072EEDE /* Assembler+Then.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Assembler+Then.swift"; sourceTree = "<group>"; };
+		1195BE862545403E0072EEDE /* String+Bool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Bool.swift"; sourceTree = "<group>"; };
+		1195BE872545403E0072EEDE /* DProvider+ForceUnwrap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DProvider+ForceUnwrap.swift"; sourceTree = "<group>"; };
+		1195BE892545403E0072EEDE /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		1195BE8B2545403E0072EEDE /* Users.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		1195BE8C2545403E0072EEDE /* Matches.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Matches.swift; sourceTree = "<group>"; };
+		1195BE8D2545403E0072EEDE /* MoyaProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoyaProvider.swift; sourceTree = "<group>"; };
+		1195BE902545403F0072EEDE /* ServiceAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceAssembly.swift; sourceTree = "<group>"; };
+		1195BE912545403F0072EEDE /* ViewModelAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelAssembly.swift; sourceTree = "<group>"; };
+		1195BE922545403F0072EEDE /* MoyaAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoyaAssembly.swift; sourceTree = "<group>"; };
+		1195BE932545403F0072EEDE /* CompositionRoot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompositionRoot.swift; sourceTree = "<group>"; };
+		1195BE942545403F0072EEDE /* Assembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assembler.swift; sourceTree = "<group>"; };
+		1195BE972545403F0072EEDE /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		1195BE992545403F0072EEDE /* MatchInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchInfo.swift; sourceTree = "<group>"; };
+		1195BE9A2545403F0072EEDE /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		1195BE9B2545403F0072EEDE /* Matche.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Matche.swift; sourceTree = "<group>"; };
+		1195BE9C2545403F0072EEDE /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		1195BEB12545405E0072EEDE /* Resources.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Resources.xcassets; sourceTree = "<group>"; };
+		1195BECB254546DC0072EEDE /* UIHostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHostingController.swift; sourceTree = "<group>"; };
+		1195BED025454D680072EEDE /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1195BE2C25453FCB0072EEDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1195BEC4254546150072EEDE /* Dip in Frameworks */,
+				1195BEB82545411E0072EEDE /* CombineMoya in Frameworks */,
+				1195BEBE254545C80072EEDE /* Then in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1195BE4225453FCD0072EEDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1195BE4D25453FCE0072EEDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1195BE2625453FCB0072EEDE = {
+			isa = PBXGroup;
+			children = (
+				1195BE3125453FCB0072EEDE /* Kartrider */,
+				1195BE4825453FCD0072EEDE /* KartriderTests */,
+				1195BE5325453FCE0072EEDE /* KartriderUITests */,
+				1195BE3025453FCB0072EEDE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1195BE3025453FCB0072EEDE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1195BE2F25453FCB0072EEDE /* Kartrider.app */,
+				1195BE4525453FCD0072EEDE /* KartriderTests.xctest */,
+				1195BE5025453FCE0072EEDE /* KartriderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1195BE3125453FCB0072EEDE /* Kartrider */ = {
+			isa = PBXGroup;
+			children = (
+				1195BED025454D680072EEDE /* Constants.swift */,
+				1195BE8E2545403F0072EEDE /* Dependency */,
+				1195BE882545403E0072EEDE /* Error */,
+				1195BE842545403E0072EEDE /* Extensions */,
+				1195BE952545403F0072EEDE /* Model */,
+				1195BE8A2545403E0072EEDE /* Network */,
+				1195BE772545402E0072EEDE /* View */,
+				1195BE3225453FCB0072EEDE /* AppDelegate.swift */,
+				1195BE3425453FCB0072EEDE /* SceneDelegate.swift */,
+				1195BEB12545405E0072EEDE /* Resources.xcassets */,
+				1195BE3825453FCD0072EEDE /* Assets.xcassets */,
+				1195BE3D25453FCD0072EEDE /* LaunchScreen.storyboard */,
+				1195BE4025453FCD0072EEDE /* Info.plist */,
+				1195BE3A25453FCD0072EEDE /* Preview Content */,
+			);
+			path = Kartrider;
+			sourceTree = "<group>";
+		};
+		1195BE3A25453FCD0072EEDE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1195BE3B25453FCD0072EEDE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1195BE4825453FCD0072EEDE /* KartriderTests */ = {
+			isa = PBXGroup;
+			children = (
+				1195BE4925453FCD0072EEDE /* KartriderTests.swift */,
+				1195BE4B25453FCD0072EEDE /* Info.plist */,
+			);
+			path = KartriderTests;
+			sourceTree = "<group>";
+		};
+		1195BE5325453FCE0072EEDE /* KartriderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1195BE5425453FCE0072EEDE /* KartriderUITests.swift */,
+				1195BE5625453FCE0072EEDE /* Info.plist */,
+			);
+			path = KartriderUITests;
+			sourceTree = "<group>";
+		};
+		1195BE772545402E0072EEDE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1195BE782545402E0072EEDE /* Scene */,
+				1195BE7C2545402E0072EEDE /* Custom */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1195BE782545402E0072EEDE /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				1195BE792545402E0072EEDE /* Home */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		1195BE792545402E0072EEDE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				1195BED82545924E0072EEDE /* User */,
+				1195BE7B2545402E0072EEDE /* HomeContentView.swift */,
+				1195BE7A2545402E0072EEDE /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		1195BE7C2545402E0072EEDE /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				1195BE7D2545402E0072EEDE /* RoundedCorner.swift */,
+				1195BECB254546DC0072EEDE /* UIHostingController.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		1195BE842545403E0072EEDE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1195BE852545403E0072EEDE /* Assembler+Then.swift */,
+				1195BE862545403E0072EEDE /* String+Bool.swift */,
+				1195BE872545403E0072EEDE /* DProvider+ForceUnwrap.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1195BE882545403E0072EEDE /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				1195BE892545403E0072EEDE /* NetworkError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		1195BE8A2545403E0072EEDE /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				1195BE8B2545403E0072EEDE /* Users.swift */,
+				1195BE8C2545403E0072EEDE /* Matches.swift */,
+				1195BE8D2545403E0072EEDE /* MoyaProvider.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		1195BE8E2545403F0072EEDE /* Dependency */ = {
+			isa = PBXGroup;
+			children = (
+				1195BE8F2545403F0072EEDE /* Assembly */,
+				1195BE932545403F0072EEDE /* CompositionRoot.swift */,
+				1195BE942545403F0072EEDE /* Assembler.swift */,
+			);
+			path = Dependency;
+			sourceTree = "<group>";
+		};
+		1195BE8F2545403F0072EEDE /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				1195BE902545403F0072EEDE /* ServiceAssembly.swift */,
+				1195BE912545403F0072EEDE /* ViewModelAssembly.swift */,
+				1195BE922545403F0072EEDE /* MoyaAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		1195BE952545403F0072EEDE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1195BE962545403F0072EEDE /* Service */,
+				1195BE982545403F0072EEDE /* Entities */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1195BE962545403F0072EEDE /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				1195BE972545403F0072EEDE /* UserService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		1195BE982545403F0072EEDE /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				1195BE992545403F0072EEDE /* MatchInfo.swift */,
+				1195BE9A2545403F0072EEDE /* User.swift */,
+				1195BE9B2545403F0072EEDE /* Matche.swift */,
+				1195BE9C2545403F0072EEDE /* Player.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		1195BED82545924E0072EEDE /* User */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1195BE2E25453FCB0072EEDE /* Kartrider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1195BE5925453FCE0072EEDE /* Build configuration list for PBXNativeTarget "Kartrider" */;
+			buildPhases = (
+				1195BE2B25453FCB0072EEDE /* Sources */,
+				1195BE2C25453FCB0072EEDE /* Frameworks */,
+				1195BE2D25453FCB0072EEDE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kartrider;
+			packageProductDependencies = (
+				1195BEB72545411E0072EEDE /* CombineMoya */,
+				1195BEBD254545C80072EEDE /* Then */,
+				1195BEC3254546150072EEDE /* Dip */,
+			);
+			productName = Kartrider;
+			productReference = 1195BE2F25453FCB0072EEDE /* Kartrider.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1195BE4425453FCD0072EEDE /* KartriderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1195BE5C25453FCE0072EEDE /* Build configuration list for PBXNativeTarget "KartriderTests" */;
+			buildPhases = (
+				1195BE4125453FCD0072EEDE /* Sources */,
+				1195BE4225453FCD0072EEDE /* Frameworks */,
+				1195BE4325453FCD0072EEDE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1195BE4725453FCD0072EEDE /* PBXTargetDependency */,
+			);
+			name = KartriderTests;
+			productName = KartriderTests;
+			productReference = 1195BE4525453FCD0072EEDE /* KartriderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1195BE4F25453FCE0072EEDE /* KartriderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1195BE5F25453FCE0072EEDE /* Build configuration list for PBXNativeTarget "KartriderUITests" */;
+			buildPhases = (
+				1195BE4C25453FCE0072EEDE /* Sources */,
+				1195BE4D25453FCE0072EEDE /* Frameworks */,
+				1195BE4E25453FCE0072EEDE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1195BE5225453FCE0072EEDE /* PBXTargetDependency */,
+			);
+			name = KartriderUITests;
+			productName = KartriderUITests;
+			productReference = 1195BE5025453FCE0072EEDE /* KartriderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1195BE2725453FCB0072EEDE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					1195BE2E25453FCB0072EEDE = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					1195BE4425453FCD0072EEDE = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 1195BE2E25453FCB0072EEDE;
+					};
+					1195BE4F25453FCE0072EEDE = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 1195BE2E25453FCB0072EEDE;
+					};
+				};
+			};
+			buildConfigurationList = 1195BE2A25453FCB0072EEDE /* Build configuration list for PBXProject "Kartrider" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1195BE2625453FCB0072EEDE;
+			packageReferences = (
+				1195BEB62545411E0072EEDE /* XCRemoteSwiftPackageReference "Moya" */,
+				1195BEBC254545C80072EEDE /* XCRemoteSwiftPackageReference "Then" */,
+				1195BEC2254546150072EEDE /* XCRemoteSwiftPackageReference "Dip" */,
+			);
+			productRefGroup = 1195BE3025453FCB0072EEDE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1195BE2E25453FCB0072EEDE /* Kartrider */,
+				1195BE4425453FCD0072EEDE /* KartriderTests */,
+				1195BE4F25453FCE0072EEDE /* KartriderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1195BE2D25453FCB0072EEDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1195BE3F25453FCD0072EEDE /* LaunchScreen.storyboard in Resources */,
+				1195BEB22545405F0072EEDE /* Resources.xcassets in Resources */,
+				1195BE3C25453FCD0072EEDE /* Preview Assets.xcassets in Resources */,
+				1195BE3925453FCD0072EEDE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1195BE4325453FCD0072EEDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1195BE4E25453FCE0072EEDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1195BE2B25453FCB0072EEDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1195BE802545402E0072EEDE /* RoundedCorner.swift in Sources */,
+				1195BEA22545403F0072EEDE /* Matches.swift in Sources */,
+				1195BE3325453FCB0072EEDE /* AppDelegate.swift in Sources */,
+				1195BEA62545403F0072EEDE /* MoyaAssembly.swift in Sources */,
+				1195BEAD2545403F0072EEDE /* Player.swift in Sources */,
+				1195BEA82545403F0072EEDE /* Assembler.swift in Sources */,
+				1195BEA42545403F0072EEDE /* ServiceAssembly.swift in Sources */,
+				1195BE9E2545403F0072EEDE /* String+Bool.swift in Sources */,
+				1195BEAA2545403F0072EEDE /* MatchInfo.swift in Sources */,
+				1195BE3525453FCB0072EEDE /* SceneDelegate.swift in Sources */,
+				1195BE9D2545403F0072EEDE /* Assembler+Then.swift in Sources */,
+				1195BE9F2545403F0072EEDE /* DProvider+ForceUnwrap.swift in Sources */,
+				1195BE7F2545402E0072EEDE /* HomeContentView.swift in Sources */,
+				1195BE7E2545402E0072EEDE /* HomeViewModel.swift in Sources */,
+				1195BEA92545403F0072EEDE /* UserService.swift in Sources */,
+				1195BEA02545403F0072EEDE /* NetworkError.swift in Sources */,
+				1195BEA72545403F0072EEDE /* CompositionRoot.swift in Sources */,
+				1195BEA52545403F0072EEDE /* ViewModelAssembly.swift in Sources */,
+				1195BEA12545403F0072EEDE /* Users.swift in Sources */,
+				1195BEAC2545403F0072EEDE /* Matche.swift in Sources */,
+				1195BECC254546DC0072EEDE /* UIHostingController.swift in Sources */,
+				1195BEA32545403F0072EEDE /* MoyaProvider.swift in Sources */,
+				1195BEAB2545403F0072EEDE /* User.swift in Sources */,
+				1195BED125454D680072EEDE /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1195BE4125453FCD0072EEDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1195BE4A25453FCD0072EEDE /* KartriderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1195BE4C25453FCE0072EEDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1195BE5525453FCE0072EEDE /* KartriderUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1195BE4725453FCD0072EEDE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1195BE2E25453FCB0072EEDE /* Kartrider */;
+			targetProxy = 1195BE4625453FCD0072EEDE /* PBXContainerItemProxy */;
+		};
+		1195BE5225453FCE0072EEDE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1195BE2E25453FCB0072EEDE /* Kartrider */;
+			targetProxy = 1195BE5125453FCE0072EEDE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1195BE3D25453FCD0072EEDE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1195BE3E25453FCD0072EEDE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1195BE5725453FCE0072EEDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1195BE5825453FCE0072EEDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1195BE5A25453FCE0072EEDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Kartrider/Preview Content\"";
+				DEVELOPMENT_TEAM = QG5U8557Y9;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Kartrider/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hyunjin.Kartrider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1195BE5B25453FCE0072EEDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Kartrider/Preview Content\"";
+				DEVELOPMENT_TEAM = QG5U8557Y9;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Kartrider/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hyunjin.Kartrider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1195BE5D25453FCE0072EEDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QG5U8557Y9;
+				INFOPLIST_FILE = KartriderTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hyunjin.KartriderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kartrider.app/Kartrider";
+			};
+			name = Debug;
+		};
+		1195BE5E25453FCE0072EEDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QG5U8557Y9;
+				INFOPLIST_FILE = KartriderTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hyunjin.KartriderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kartrider.app/Kartrider";
+			};
+			name = Release;
+		};
+		1195BE6025453FCE0072EEDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QG5U8557Y9;
+				INFOPLIST_FILE = KartriderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hyunjin.KartriderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Kartrider;
+			};
+			name = Debug;
+		};
+		1195BE6125453FCE0072EEDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QG5U8557Y9;
+				INFOPLIST_FILE = KartriderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hyunjin.KartriderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Kartrider;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1195BE2A25453FCB0072EEDE /* Build configuration list for PBXProject "Kartrider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1195BE5725453FCE0072EEDE /* Debug */,
+				1195BE5825453FCE0072EEDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1195BE5925453FCE0072EEDE /* Build configuration list for PBXNativeTarget "Kartrider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1195BE5A25453FCE0072EEDE /* Debug */,
+				1195BE5B25453FCE0072EEDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1195BE5C25453FCE0072EEDE /* Build configuration list for PBXNativeTarget "KartriderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1195BE5D25453FCE0072EEDE /* Debug */,
+				1195BE5E25453FCE0072EEDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1195BE5F25453FCE0072EEDE /* Build configuration list for PBXNativeTarget "KartriderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1195BE6025453FCE0072EEDE /* Debug */,
+				1195BE6125453FCE0072EEDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1195BEB62545411E0072EEDE /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				branch = development;
+				kind = branch;
+			};
+		};
+		1195BEBC254545C80072EEDE /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/woohyunjin06/Then.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.1;
+			};
+		};
+		1195BEC2254546150072EEDE /* XCRemoteSwiftPackageReference "Dip" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AliSoftware/Dip.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1195BEB72545411E0072EEDE /* CombineMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1195BEB62545411E0072EEDE /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = CombineMoya;
+		};
+		1195BEBD254545C80072EEDE /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1195BEBC254545C80072EEDE /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+		1195BEC3254546150072EEDE /* Dip */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1195BEC2254546150072EEDE /* XCRemoteSwiftPackageReference "Dip" */;
+			productName = Dip;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 1195BE2725453FCB0072EEDE /* Project object */;
+}
