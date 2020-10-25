@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct KartriderApp: App {
+    
     var body: some Scene {
         WindowGroup {
-            HomeContentView(viewModel: HomeViewModel())
+            HomeContentView(
+                viewModel: DependencyProvider.shared.resolve()
+            )
         }
     }
 }

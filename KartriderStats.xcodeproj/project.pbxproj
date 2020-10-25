@@ -26,6 +26,16 @@
 		113FC03E25286BD700DFF932 /* MatchInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113FC03D25286BD700DFF932 /* MatchInfo.swift */; };
 		113FC043252873EE00DFF932 /* MoyaProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113FC042252873EE00DFF932 /* MoyaProvider.swift */; };
 		113FC0482528776C00DFF932 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113FC0472528776C00DFF932 /* NetworkError.swift */; };
+		1142EF942544412400599A25 /* Dip in Frameworks */ = {isa = PBXBuildFile; productRef = 1142EF932544412400599A25 /* Dip */; };
+		1142EF992544424600599A25 /* CompositionRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1142EF982544424600599A25 /* CompositionRoot.swift */; };
+		1142EF9E2544476700599A25 /* Assembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1142EF9D2544476700599A25 /* Assembler.swift */; };
+		1142EFA3254447B400599A25 /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1142EFA2254447B400599A25 /* ServiceAssembly.swift */; };
+		1142EFA82544483F00599A25 /* MoyaAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1142EFA72544483F00599A25 /* MoyaAssembly.swift */; };
+		117162CA2544516D00FBB52D /* Assembler+Then.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117162C92544516D00FBB52D /* Assembler+Then.swift */; };
+		117162DC254454C600FBB52D /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 117162DB254454C600FBB52D /* Then */; };
+		117162E12544552C00FBB52D /* ViewModelAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117162E02544552C00FBB52D /* ViewModelAssembly.swift */; };
+		117162E925445C5400FBB52D /* DProvider+ForceUnwrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117162E825445C5400FBB52D /* DProvider+ForceUnwrap.swift */; };
+		117162F8254469E300FBB52D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 117162FA254469E300FBB52D /* Localizable.strings */; };
 		1179AD502528CF5E00967960 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1179AD4F2528CF5E00967960 /* HomeViewModel.swift */; };
 		11E4CF8B2528BD3200418DE7 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E4CF8A2528BD3200418DE7 /* RoundedCorner.swift */; };
 /* End PBXBuildFile section */
@@ -72,7 +82,16 @@
 		113FC03D25286BD700DFF932 /* MatchInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchInfo.swift; sourceTree = "<group>"; };
 		113FC042252873EE00DFF932 /* MoyaProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaProvider.swift; sourceTree = "<group>"; };
 		113FC0472528776C00DFF932 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		1142EF982544424600599A25 /* CompositionRoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionRoot.swift; sourceTree = "<group>"; };
+		1142EF9D2544476700599A25 /* Assembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembler.swift; sourceTree = "<group>"; };
+		1142EFA2254447B400599A25 /* ServiceAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAssembly.swift; sourceTree = "<group>"; };
+		1142EFA72544483F00599A25 /* MoyaAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaAssembly.swift; sourceTree = "<group>"; };
+		117162C92544516D00FBB52D /* Assembler+Then.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Assembler+Then.swift"; sourceTree = "<group>"; };
+		117162E02544552C00FBB52D /* ViewModelAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelAssembly.swift; sourceTree = "<group>"; };
+		117162E825445C5400FBB52D /* DProvider+ForceUnwrap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DProvider+ForceUnwrap.swift"; sourceTree = "<group>"; };
+		117162FE254469E500FBB52D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		1179AD4F2528CF5E00967960 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		1187341525446B2B00582A35 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
 		11E4CF8A2528BD3200418DE7 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,6 +100,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1142EF942544412400599A25 /* Dip in Frameworks */,
+				117162DC254454C600FBB52D /* Then in Frameworks */,
 				113FBFF6252852AA00DFF932 /* CombineMoya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,6 +165,7 @@
 		113FBFB3252845F300DFF932 /* KartriderStats */ = {
 			isa = PBXGroup;
 			children = (
+				1181942B253D8E3F0000C9F0 /* Dependency */,
 				11D4E8BE2528A31A0078D483 /* View */,
 				113FC02F252866F000DFF932 /* Extensions */,
 				113FC019252861F300DFF932 /* Model */,
@@ -155,6 +177,7 @@
 				113FBFBA252845F600DFF932 /* Preview Content */,
 				113FBFE225284C6D00DFF932 /* Resources.xcassets */,
 				113FC001252852EE00DFF932 /* Constants.swift */,
+				117162FA254469E300FBB52D /* Localizable.strings */,
 			);
 			path = KartriderStats;
 			sourceTree = "<group>";
@@ -216,8 +239,30 @@
 			isa = PBXGroup;
 			children = (
 				113FC030252866FF00DFF932 /* String+Bool.swift */,
+				117162C92544516D00FBB52D /* Assembler+Then.swift */,
+				117162E825445C5400FBB52D /* DProvider+ForceUnwrap.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1142EFAC2544484200599A25 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				1142EFA72544483F00599A25 /* MoyaAssembly.swift */,
+				1142EFA2254447B400599A25 /* ServiceAssembly.swift */,
+				117162E02544552C00FBB52D /* ViewModelAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		1181942B253D8E3F0000C9F0 /* Dependency */ = {
+			isa = PBXGroup;
+			children = (
+				1142EFAC2544484200599A25 /* Assembly */,
+				1142EF982544424600599A25 /* CompositionRoot.swift */,
+				1142EF9D2544476700599A25 /* Assembler.swift */,
+			);
+			path = Dependency;
 			sourceTree = "<group>";
 		};
 		118D686F253C95BB0088164A /* Scene */ = {
@@ -272,6 +317,8 @@
 			name = KartriderStats;
 			packageProductDependencies = (
 				113FBFF5252852AA00DFF932 /* CombineMoya */,
+				1142EF932544412400599A25 /* Dip */,
+				117162DB254454C600FBB52D /* Then */,
 			);
 			productName = KartriderStats;
 			productReference = 113FBFB1252845F300DFF932 /* KartriderStats.app */;
@@ -346,11 +393,13 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
+				ko,
 			);
 			mainGroup = 113FBFA8252845F300DFF932;
 			packageReferences = (
 				113FBFF4252852AA00DFF932 /* XCRemoteSwiftPackageReference "Moya" */,
+				1142EF922544412400599A25 /* XCRemoteSwiftPackageReference "Dip" */,
+				117162DA254454C600FBB52D /* XCRemoteSwiftPackageReference "Then" */,
 			);
 			productRefGroup = 113FBFB2252845F300DFF932 /* Products */;
 			projectDirPath = "";
@@ -369,6 +418,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				113FBFE325284C6D00DFF932 /* Resources.xcassets in Resources */,
+				117162F8254469E300FBB52D /* Localizable.strings in Resources */,
 				113FBFBC252845F600DFF932 /* Preview Assets.xcassets in Resources */,
 				113FBFB9252845F600DFF932 /* Assets.xcassets in Resources */,
 			);
@@ -395,14 +445,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1142EF9E2544476700599A25 /* Assembler.swift in Sources */,
 				113FC0072528559300DFF932 /* Users.swift in Sources */,
 				113FC03E25286BD700DFF932 /* MatchInfo.swift in Sources */,
+				1142EFA82544483F00599A25 /* MoyaAssembly.swift in Sources */,
+				1142EFA3254447B400599A25 /* ServiceAssembly.swift in Sources */,
 				113FC02B252863C300DFF932 /* Matche.swift in Sources */,
 				113FC031252866FF00DFF932 /* String+Bool.swift in Sources */,
 				113FC015252861D400DFF932 /* Matches.swift in Sources */,
 				113FBFB7252845F300DFF932 /* HomeContentView.swift in Sources */,
+				117162E12544552C00FBB52D /* ViewModelAssembly.swift in Sources */,
 				11E4CF8B2528BD3200418DE7 /* RoundedCorner.swift in Sources */,
 				113FBFB5252845F300DFF932 /* KartriderApp.swift in Sources */,
+				117162CA2544516D00FBB52D /* Assembler+Then.swift in Sources */,
+				1142EF992544424600599A25 /* CompositionRoot.swift in Sources */,
 				113FC002252852EE00DFF932 /* Constants.swift in Sources */,
 				113FC0392528694A00DFF932 /* Player.swift in Sources */,
 				113FC0482528776C00DFF932 /* NetworkError.swift in Sources */,
@@ -410,6 +466,7 @@
 				113FC043252873EE00DFF932 /* MoyaProvider.swift in Sources */,
 				1179AD502528CF5E00967960 /* HomeViewModel.swift in Sources */,
 				113FC01B2528633900DFF932 /* User.swift in Sources */,
+				117162E925445C5400FBB52D /* DProvider+ForceUnwrap.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,11 +501,24 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		117162FA254469E300FBB52D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				117162FE254469E500FBB52D /* en */,
+				1187341525446B2B00582A35 /* ko */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		113FBFD4252845F600DFF932 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -510,6 +580,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -579,7 +650,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.hyunjin.KartriderStats;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -601,7 +672,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.hyunjin.KartriderStats;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -739,6 +810,22 @@
 				kind = branch;
 			};
 		};
+		1142EF922544412400599A25 /* XCRemoteSwiftPackageReference "Dip" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AliSoftware/Dip";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.1.1;
+			};
+		};
+		117162DA254454C600FBB52D /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/woohyunjin06/Then.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -746,6 +833,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 113FBFF4252852AA00DFF932 /* XCRemoteSwiftPackageReference "Moya" */;
 			productName = CombineMoya;
+		};
+		1142EF932544412400599A25 /* Dip */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1142EF922544412400599A25 /* XCRemoteSwiftPackageReference "Dip" */;
+			productName = Dip;
+		};
+		117162DB254454C600FBB52D /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 117162DA254454C600FBB52D /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

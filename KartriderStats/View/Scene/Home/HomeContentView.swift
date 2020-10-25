@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HomeContentView: View {
     
+//    let detailView = NavigationLink(<#LocalizedStringKey#>, destination: <#_#>)
     @ObservedObject var viewModel: HomeViewModel
     
     @State var nickname: String = ""
@@ -28,11 +29,12 @@ struct HomeContentView: View {
                         
                         VStack(spacing: 0) {
                             Spacer()
-                            TextField("플레이스홀더", text: $nickname, onEditingChanged: { change in
+                            TextField("placeholder_username", text: $nickname, onEditingChanged: { change in
                                 
                             }, onCommit: {
-                                
+                                viewModel.searchAccessId()
                             })
+                            .foregroundColor(.black)
                             .frame(
                                 height: 50
                             )
@@ -58,7 +60,7 @@ struct HomeContentView: View {
                     .padding(.top, 50)
                 }
             }.ignoresSafeArea(.all, edges: .top)
-        }.preferredColorScheme(.dark)
+        }.preferredColorScheme(.light)
     }
 }
 
@@ -110,6 +112,8 @@ struct FavoriteUserRow: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeContentView(viewModel: HomeViewModel())
+        HomeContentView(
+            viewModel: DependencyProvider.shared.resolve()
+        )
     }
 }

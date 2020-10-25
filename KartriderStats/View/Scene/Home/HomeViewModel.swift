@@ -30,7 +30,7 @@ class HomeViewModel: ObservableObject {
 //            .store(in: &cancellables)
     }
     
-    private func searchAccessId() {
+    func searchAccessId() {
         userService.accessId(nickname: nickname)
             .sink(
                 receiveCompletion: { [weak self] completion in
