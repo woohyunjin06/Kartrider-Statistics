@@ -5,19 +5,17 @@
 //  Created by 현진 on 2020/10/04.
 //
 
-import Foundation
-
 import Combine
 
 class HomeViewModel: ObservableObject {
-    
-    // Inputs
-    @Published var nickname: String = ""
-    
+
     // Outputs
-    @Published var error: String = ""
+    @Published var errorMessage: String = ""
+    @Published var errorAlertPresenting: Bool = false
+    
+    @Published var userName: String = ""
     @Published var accessId: String = ""
-    @Published var result: Bool = false
+    @Published var userDetailPresenting: Bool = false
     
     private var cancellables = Set<AnyCancellable>()
     private let userService: UserService
@@ -26,22 +24,27 @@ class HomeViewModel: ObservableObject {
         self.userService = userService
     }
     
-    func searchAccessId() {
-        userService.accessId(nickname: nickname)
+    func searchAccessId(userName: String) {
+        userService.accessId(userName: userName)
             .sink(
                 receiveCompletion: { [weak self] completion in
                     switch completion {
                     case let .failure(error):
-                        self?.error = error.localizedDescription
+                        if case let .statusError(code) = error, 400..<500 ~= code {
+                            self?.errorMessage = "존재하지 않는 유저입니다."
+                        } else {
+                            self?.errorMessage = error.localizedDescription
+                        }
+                        self?.errorAlertPresenting = true
                         break
                     default:
                         break
                     }
                 }, receiveValue: { [weak self] accessId in
-                    self?.result = true
+                    self?.userDetailPresenting = true
+                    self?.userName = userName
                     self?.accessId = accessId
                 }
             ).store(in: &cancellables)
     }
-    
 }

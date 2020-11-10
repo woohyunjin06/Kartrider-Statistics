@@ -10,6 +10,7 @@ import Foundation
 
 import CombineMoya
 import Moya
+import Then
 
 class MoyaProvider<Target>: Moya.MoyaProvider<Target> where Target: TargetType {
     func request<R: Decodable>(_ target: Target, type: R.Type) -> AnyPublisher<Response<R>, NetworkError> {
@@ -20,7 +21,10 @@ class MoyaProvider<Target>: Moya.MoyaProvider<Target> where Target: TargetType {
                 }
                 
                 do {
-                    let data = try JSONDecoder().decode(R.self, from: response.data)
+                    let decoder = JSONDecoder().then {
+                        $0.dateDecodingStrategy = .formatted(.dateTime)
+                    }
+                    let data = try decoder.decode(R.self, from: response.data)
                     return Response(statusCode: response.statusCode, data: data)
                 } catch {
                     throw NetworkError.decodeError(message: error.localizedDescription)
@@ -40,3 +44,12 @@ class MoyaProvider<Target>: Moya.MoyaProvider<Target> where Target: TargetType {
         let data: R
     }
 }
+extension Formatter {
+    static var dateTime: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
+        return formatter
+    }()
+}
+
+extension JSONDecoder: Then {}

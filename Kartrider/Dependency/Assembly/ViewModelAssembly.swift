@@ -9,5 +9,8 @@ class ViewModelAssembly: Assembly {
     
     func assemble(container: Container) {
         container.register { HomeViewModel(userService: $0) }
+        container.register { (userName: String, accessId: String) in
+            try UserViewModel(userName: userName, accessId: accessId, userService: container.resolve())
+        }
     }
 }

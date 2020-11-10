@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1111CAF4254D868200D7F27C /* WeakMapTable in Frameworks */ = {isa = PBXBuildFile; productRef = 1111CAF3254D868200D7F27C /* WeakMapTable */; };
+		1111CAFF254EAA1300D7F27C /* Button+Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1111CAFE254EAA1300D7F27C /* Button+Combine.swift */; };
+		1111CB07254EF58200D7F27C /* TextField+Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1111CB06254EF58200D7F27C /* TextField+Combine.swift */; };
+		1157EB3425470EB50020B74D /* MatchesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1157EB3325470EB50020B74D /* MatchesResponse.swift */; };
+		1174A71C254B063F00F5F824 /* SizeKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1174A71B254B063F00F5F824 /* SizeKey.swift */; };
 		1195BE3325453FCB0072EEDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1195BE3225453FCB0072EEDE /* AppDelegate.swift */; };
 		1195BE3525453FCB0072EEDE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1195BE3425453FCB0072EEDE /* SceneDelegate.swift */; };
 		1195BE3925453FCD0072EEDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1195BE3825453FCD0072EEDE /* Assets.xcassets */; };
@@ -40,6 +45,19 @@
 		1195BEC4254546150072EEDE /* Dip in Frameworks */ = {isa = PBXBuildFile; productRef = 1195BEC3254546150072EEDE /* Dip */; };
 		1195BECC254546DC0072EEDE /* UIHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1195BECB254546DC0072EEDE /* UIHostingController.swift */; };
 		1195BED125454D680072EEDE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1195BED025454D680072EEDE /* Constants.swift */; };
+		11BA57532545948500E432ED /* UserContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BA57522545948500E432ED /* UserContentView.swift */; };
+		11BA57582545948E00E432ED /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BA57572545948E00E432ED /* UserViewModel.swift */; };
+		11BA575D2545B00400E432ED /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BA575C2545B00400E432ED /* String+Extension.swift */; };
+		11BA57672545B29800E432ED /* UserMatchesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BA57662545B29800E432ED /* UserMatchesRequest.swift */; };
+		11BA576C2545B54E00E432ED /* Encodable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BA576B2545B54E00E432ED /* Encodable+Extension.swift */; };
+		11BA57712545B80200E432ED /* Metadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BA57702545B80200E432ED /* Metadata.swift */; };
+		11D36ADC2545BA4C0019DF4B /* character.json in Resources */ = {isa = PBXBuildFile; fileRef = 11D36AD32545BA4B0019DF4B /* character.json */; };
+		11D36ADD2545BA4C0019DF4B /* track.json in Resources */ = {isa = PBXBuildFile; fileRef = 11D36AD42545BA4C0019DF4B /* track.json */; };
+		11D36ADE2545BA4C0019DF4B /* flyingPet.json in Resources */ = {isa = PBXBuildFile; fileRef = 11D36AD52545BA4C0019DF4B /* flyingPet.json */; };
+		11D36ADF2545BA4C0019DF4B /* kart.json in Resources */ = {isa = PBXBuildFile; fileRef = 11D36AD92545BA4C0019DF4B /* kart.json */; };
+		11D36AE02545BA4C0019DF4B /* gameType.json in Resources */ = {isa = PBXBuildFile; fileRef = 11D36ADA2545BA4C0019DF4B /* gameType.json */; };
+		11D36AE12545BA4C0019DF4B /* pet.json in Resources */ = {isa = PBXBuildFile; fileRef = 11D36ADB2545BA4C0019DF4B /* pet.json */; };
+		11E31251255A6DCB006C02F2 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E31250255A6DCB006C02F2 /* AppState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +78,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1111CAFE254EAA1300D7F27C /* Button+Combine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Button+Combine.swift"; sourceTree = "<group>"; };
+		1111CB06254EF58200D7F27C /* TextField+Combine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextField+Combine.swift"; sourceTree = "<group>"; };
+		1157EB3325470EB50020B74D /* MatchesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesResponse.swift; sourceTree = "<group>"; };
+		1174A71B254B063F00F5F824 /* SizeKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeKey.swift; sourceTree = "<group>"; };
 		1195BE2F25453FCB0072EEDE /* Kartrider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kartrider.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1195BE3225453FCB0072EEDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1195BE3425453FCB0072EEDE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +118,19 @@
 		1195BEB12545405E0072EEDE /* Resources.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Resources.xcassets; sourceTree = "<group>"; };
 		1195BECB254546DC0072EEDE /* UIHostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHostingController.swift; sourceTree = "<group>"; };
 		1195BED025454D680072EEDE /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		11BA57522545948500E432ED /* UserContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserContentView.swift; sourceTree = "<group>"; };
+		11BA57572545948E00E432ED /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		11BA575C2545B00400E432ED /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		11BA57662545B29800E432ED /* UserMatchesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMatchesRequest.swift; sourceTree = "<group>"; };
+		11BA576B2545B54E00E432ED /* Encodable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Extension.swift"; sourceTree = "<group>"; };
+		11BA57702545B80200E432ED /* Metadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metadata.swift; sourceTree = "<group>"; };
+		11D36AD32545BA4B0019DF4B /* character.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = character.json; sourceTree = "<group>"; };
+		11D36AD42545BA4C0019DF4B /* track.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = track.json; sourceTree = "<group>"; };
+		11D36AD52545BA4C0019DF4B /* flyingPet.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = flyingPet.json; sourceTree = "<group>"; };
+		11D36AD92545BA4C0019DF4B /* kart.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = kart.json; sourceTree = "<group>"; };
+		11D36ADA2545BA4C0019DF4B /* gameType.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = gameType.json; sourceTree = "<group>"; };
+		11D36ADB2545BA4C0019DF4B /* pet.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pet.json; sourceTree = "<group>"; };
+		11E31250255A6DCB006C02F2 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +140,7 @@
 			files = (
 				1195BEC4254546150072EEDE /* Dip in Frameworks */,
 				1195BEB82545411E0072EEDE /* CombineMoya in Frameworks */,
+				1111CAF4254D868200D7F27C /* WeakMapTable in Frameworks */,
 				1195BEBE254545C80072EEDE /* Then in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -126,6 +162,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1111CAFD254EA99600D7F27C /* CombineUI */ = {
+			isa = PBXGroup;
+			children = (
+				1111CAFE254EAA1300D7F27C /* Button+Combine.swift */,
+				1111CB06254EF58200D7F27C /* TextField+Combine.swift */,
+			);
+			path = CombineUI;
+			sourceTree = "<group>";
+		};
+		1174A71A254B062C00F5F824 /* PreferenceKeys */ = {
+			isa = PBXGroup;
+			children = (
+				1174A71B254B063F00F5F824 /* SizeKey.swift */,
+			);
+			path = PreferenceKeys;
+			sourceTree = "<group>";
+		};
 		1195BE2625453FCB0072EEDE = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +202,8 @@
 		1195BE3125453FCB0072EEDE /* Kartrider */ = {
 			isa = PBXGroup;
 			children = (
+				1111CAFD254EA99600D7F27C /* CombineUI */,
+				11BA57752545B9EE00E432ED /* Metadata */,
 				1195BED025454D680072EEDE /* Constants.swift */,
 				1195BE8E2545403F0072EEDE /* Dependency */,
 				1195BE882545403E0072EEDE /* Error */,
@@ -163,6 +218,7 @@
 				1195BE3D25453FCD0072EEDE /* LaunchScreen.storyboard */,
 				1195BE4025453FCD0072EEDE /* Info.plist */,
 				1195BE3A25453FCD0072EEDE /* Preview Content */,
+				11E31250255A6DCB006C02F2 /* AppState.swift */,
 			);
 			path = Kartrider;
 			sourceTree = "<group>";
@@ -196,6 +252,7 @@
 		1195BE772545402E0072EEDE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1174A71A254B062C00F5F824 /* PreferenceKeys */,
 				1195BE782545402E0072EEDE /* Scene */,
 				1195BE7C2545402E0072EEDE /* Custom */,
 			);
@@ -206,6 +263,7 @@
 			isa = PBXGroup;
 			children = (
 				1195BE792545402E0072EEDE /* Home */,
+				11BA574E2545945B00E432ED /* User */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -213,7 +271,6 @@
 		1195BE792545402E0072EEDE /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				1195BED82545924E0072EEDE /* User */,
 				1195BE7B2545402E0072EEDE /* HomeContentView.swift */,
 				1195BE7A2545402E0072EEDE /* HomeViewModel.swift */,
 			);
@@ -235,6 +292,8 @@
 				1195BE852545403E0072EEDE /* Assembler+Then.swift */,
 				1195BE862545403E0072EEDE /* String+Bool.swift */,
 				1195BE872545403E0072EEDE /* DProvider+ForceUnwrap.swift */,
+				11BA575C2545B00400E432ED /* String+Extension.swift */,
+				11BA576B2545B54E00E432ED /* Encodable+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -250,7 +309,7 @@
 		1195BE8A2545403E0072EEDE /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				1195BE8B2545403E0072EEDE /* Users.swift */,
+				11BA57612545B20200E432ED /* Users */,
 				1195BE8C2545403E0072EEDE /* Matches.swift */,
 				1195BE8D2545403E0072EEDE /* MoyaProvider.swift */,
 			);
@@ -290,6 +349,7 @@
 			isa = PBXGroup;
 			children = (
 				1195BE972545403F0072EEDE /* UserService.swift */,
+				1157EB3325470EB50020B74D /* MatchesResponse.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -301,15 +361,48 @@
 				1195BE9A2545403F0072EEDE /* User.swift */,
 				1195BE9B2545403F0072EEDE /* Matche.swift */,
 				1195BE9C2545403F0072EEDE /* Player.swift */,
+				11BA57702545B80200E432ED /* Metadata.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
 		};
-		1195BED82545924E0072EEDE /* User */ = {
+		11BA574E2545945B00E432ED /* User */ = {
 			isa = PBXGroup;
 			children = (
+				11BA57522545948500E432ED /* UserContentView.swift */,
+				11BA57572545948E00E432ED /* UserViewModel.swift */,
 			);
 			path = User;
+			sourceTree = "<group>";
+		};
+		11BA57612545B20200E432ED /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				11BA57622545B20A00E432ED /* Requests */,
+				1195BE8B2545403E0072EEDE /* Users.swift */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
+		11BA57622545B20A00E432ED /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				11BA57662545B29800E432ED /* UserMatchesRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		11BA57752545B9EE00E432ED /* Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				11D36AD32545BA4B0019DF4B /* character.json */,
+				11D36AD52545BA4C0019DF4B /* flyingPet.json */,
+				11D36ADA2545BA4C0019DF4B /* gameType.json */,
+				11D36AD92545BA4C0019DF4B /* kart.json */,
+				11D36ADB2545BA4C0019DF4B /* pet.json */,
+				11D36AD42545BA4C0019DF4B /* track.json */,
+			);
+			path = Metadata;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,6 +425,7 @@
 				1195BEB72545411E0072EEDE /* CombineMoya */,
 				1195BEBD254545C80072EEDE /* Then */,
 				1195BEC3254546150072EEDE /* Dip */,
+				1111CAF3254D868200D7F27C /* WeakMapTable */,
 			);
 			productName = Kartrider;
 			productReference = 1195BE2F25453FCB0072EEDE /* Kartrider.app */;
@@ -408,6 +502,7 @@
 				1195BEB62545411E0072EEDE /* XCRemoteSwiftPackageReference "Moya" */,
 				1195BEBC254545C80072EEDE /* XCRemoteSwiftPackageReference "Then" */,
 				1195BEC2254546150072EEDE /* XCRemoteSwiftPackageReference "Dip" */,
+				1111CAF2254D868200D7F27C /* XCRemoteSwiftPackageReference "WeakMapTable" */,
 			);
 			productRefGroup = 1195BE3025453FCB0072EEDE /* Products */;
 			projectDirPath = "";
@@ -427,8 +522,14 @@
 			files = (
 				1195BE3F25453FCD0072EEDE /* LaunchScreen.storyboard in Resources */,
 				1195BEB22545405F0072EEDE /* Resources.xcassets in Resources */,
+				11D36ADC2545BA4C0019DF4B /* character.json in Resources */,
+				11D36AE12545BA4C0019DF4B /* pet.json in Resources */,
+				11D36ADF2545BA4C0019DF4B /* kart.json in Resources */,
+				11D36AE02545BA4C0019DF4B /* gameType.json in Resources */,
 				1195BE3C25453FCD0072EEDE /* Preview Assets.xcassets in Resources */,
 				1195BE3925453FCD0072EEDE /* Assets.xcassets in Resources */,
+				11D36ADE2545BA4C0019DF4B /* flyingPet.json in Resources */,
+				11D36ADD2545BA4C0019DF4B /* track.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,16 +554,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11BA57672545B29800E432ED /* UserMatchesRequest.swift in Sources */,
 				1195BE802545402E0072EEDE /* RoundedCorner.swift in Sources */,
 				1195BEA22545403F0072EEDE /* Matches.swift in Sources */,
 				1195BE3325453FCB0072EEDE /* AppDelegate.swift in Sources */,
 				1195BEA62545403F0072EEDE /* MoyaAssembly.swift in Sources */,
 				1195BEAD2545403F0072EEDE /* Player.swift in Sources */,
 				1195BEA82545403F0072EEDE /* Assembler.swift in Sources */,
+				1157EB3425470EB50020B74D /* MatchesResponse.swift in Sources */,
+				1111CB07254EF58200D7F27C /* TextField+Combine.swift in Sources */,
 				1195BEA42545403F0072EEDE /* ServiceAssembly.swift in Sources */,
 				1195BE9E2545403F0072EEDE /* String+Bool.swift in Sources */,
 				1195BEAA2545403F0072EEDE /* MatchInfo.swift in Sources */,
+				11BA57582545948E00E432ED /* UserViewModel.swift in Sources */,
+				1174A71C254B063F00F5F824 /* SizeKey.swift in Sources */,
+				1111CAFF254EAA1300D7F27C /* Button+Combine.swift in Sources */,
 				1195BE3525453FCB0072EEDE /* SceneDelegate.swift in Sources */,
+				11E31251255A6DCB006C02F2 /* AppState.swift in Sources */,
+				11BA57532545948500E432ED /* UserContentView.swift in Sources */,
 				1195BE9D2545403F0072EEDE /* Assembler+Then.swift in Sources */,
 				1195BE9F2545403F0072EEDE /* DProvider+ForceUnwrap.swift in Sources */,
 				1195BE7F2545402E0072EEDE /* HomeContentView.swift in Sources */,
@@ -470,12 +579,15 @@
 				1195BEA92545403F0072EEDE /* UserService.swift in Sources */,
 				1195BEA02545403F0072EEDE /* NetworkError.swift in Sources */,
 				1195BEA72545403F0072EEDE /* CompositionRoot.swift in Sources */,
+				11BA575D2545B00400E432ED /* String+Extension.swift in Sources */,
 				1195BEA52545403F0072EEDE /* ViewModelAssembly.swift in Sources */,
 				1195BEA12545403F0072EEDE /* Users.swift in Sources */,
+				11BA57712545B80200E432ED /* Metadata.swift in Sources */,
 				1195BEAC2545403F0072EEDE /* Matche.swift in Sources */,
 				1195BECC254546DC0072EEDE /* UIHostingController.swift in Sources */,
 				1195BEA32545403F0072EEDE /* MoyaProvider.swift in Sources */,
 				1195BEAB2545403F0072EEDE /* User.swift in Sources */,
+				11BA576C2545B54E00E432ED /* Encodable+Extension.swift in Sources */,
 				1195BED125454D680072EEDE /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -807,6 +919,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		1111CAF2254D868200D7F27C /* XCRemoteSwiftPackageReference "WeakMapTable" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactorKit/WeakMapTable";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
 		1195BEB62545411E0072EEDE /* XCRemoteSwiftPackageReference "Moya" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Moya/Moya.git";
@@ -834,6 +954,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		1111CAF3254D868200D7F27C /* WeakMapTable */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1111CAF2254D868200D7F27C /* XCRemoteSwiftPackageReference "WeakMapTable" */;
+			productName = WeakMapTable;
+		};
 		1195BEB72545411E0072EEDE /* CombineMoya */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 1195BEB62545411E0072EEDE /* XCRemoteSwiftPackageReference "Moya" */;

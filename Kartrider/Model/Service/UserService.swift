@@ -8,8 +8,9 @@
 import Combine
 
 protocol UserService {
-    func accessId(nickname: String) -> AnyPublisher<String, NetworkError>
-    func nickname(accessId: String) -> AnyPublisher<String, NetworkError>
+    func accessId(userName: String) -> AnyPublisher<String, NetworkError>
+    func userName(accessId: String) -> AnyPublisher<String, NetworkError>
+    func matches(accessId: String, request: UserMatchesRequest) -> AnyPublisher<[MatchInfo], NetworkError>
 }
 
 class UserServiceImpl: UserService {
@@ -20,21 +21,33 @@ class UserServiceImpl: UserService {
         self.provider = provider
     }
     
-    func accessId(nickname: String) -> AnyPublisher<String, NetworkError> {
+    func accessId(userName: String) -> AnyPublisher<String, NetworkError> {
         return provider.request(
-            .searchAccessId(nickname: nickname),
+            .searchAccessId(userName: userName),
             type: User.self
         ).map {
             $0.data.accessId
         }.eraseToAnyPublisher()
     }
     
-    func nickname(accessId: String) -> AnyPublisher<String, NetworkError> {
+    func userName(accessId: String) -> AnyPublisher<String, NetworkError> {
         return provider.request(
-            .searchNickname(accessId: accessId),
+            .searchUserName(accessId: accessId),
             type: User.self
         ).map {
             $0.data.name
         }.eraseToAnyPublisher()
     }
+    
+    func matches(accessId: String, request: UserMatchesRequest) -> AnyPublisher<[MatchInfo], NetworkError> {
+        return provider.request(
+            .fetchMatches(accessId: accessId, request: request),
+            type: MatchesResponse.self
+        ).map {
+            $0.data.matches
+                .flatMap { $0.matches }
+                .sorted { $0.startTime > $1.startTime }
+        }.eraseToAnyPublisher()
+    }
+    
 }

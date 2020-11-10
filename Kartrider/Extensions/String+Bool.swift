@@ -10,9 +10,7 @@ import Foundation
 extension String {
     func toBool() throws -> Bool {
         guard let integer = Int(self) else {
-            throw JustError(
-                message: "String given cannot be converted to int"
-            )
+            return false
         }
         return integer == 1
     }
