@@ -27,6 +27,9 @@ struct MatchInfo: Decodable {
         } else if player.matchRank == "" {
             return .Retire(playerCount: playerCount)
         } else {
+            if Int(player.matchRank)! > 8 {
+                return .Retire(playerCount: playerCount)
+            }
             return .Rank(rank: Int(player.matchRank)!, playerCount: playerCount)
         }
     }

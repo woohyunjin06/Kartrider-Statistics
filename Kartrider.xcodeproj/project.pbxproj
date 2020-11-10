@@ -37,7 +37,7 @@
 		1195BEA92545403F0072EEDE /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1195BE972545403F0072EEDE /* UserService.swift */; };
 		1195BEAA2545403F0072EEDE /* MatchInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1195BE992545403F0072EEDE /* MatchInfo.swift */; };
 		1195BEAB2545403F0072EEDE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1195BE9A2545403F0072EEDE /* User.swift */; };
-		1195BEAC2545403F0072EEDE /* Matche.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1195BE9B2545403F0072EEDE /* Matche.swift */; };
+		1195BEAC2545403F0072EEDE /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1195BE9B2545403F0072EEDE /* Match.swift */; };
 		1195BEAD2545403F0072EEDE /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1195BE9C2545403F0072EEDE /* Player.swift */; };
 		1195BEB22545405F0072EEDE /* Resources.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1195BEB12545405E0072EEDE /* Resources.xcassets */; };
 		1195BEB82545411E0072EEDE /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 1195BEB72545411E0072EEDE /* CombineMoya */; };
@@ -113,7 +113,7 @@
 		1195BE972545403F0072EEDE /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		1195BE992545403F0072EEDE /* MatchInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchInfo.swift; sourceTree = "<group>"; };
 		1195BE9A2545403F0072EEDE /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		1195BE9B2545403F0072EEDE /* Matche.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Matche.swift; sourceTree = "<group>"; };
+		1195BE9B2545403F0072EEDE /* Match.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
 		1195BE9C2545403F0072EEDE /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		1195BEB12545405E0072EEDE /* Resources.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Resources.xcassets; sourceTree = "<group>"; };
 		1195BECB254546DC0072EEDE /* UIHostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHostingController.swift; sourceTree = "<group>"; };
@@ -359,7 +359,7 @@
 			children = (
 				1195BE992545403F0072EEDE /* MatchInfo.swift */,
 				1195BE9A2545403F0072EEDE /* User.swift */,
-				1195BE9B2545403F0072EEDE /* Matche.swift */,
+				1195BE9B2545403F0072EEDE /* Match.swift */,
 				1195BE9C2545403F0072EEDE /* Player.swift */,
 				11BA57702545B80200E432ED /* Metadata.swift */,
 			);
@@ -583,7 +583,7 @@
 				1195BEA52545403F0072EEDE /* ViewModelAssembly.swift in Sources */,
 				1195BEA12545403F0072EEDE /* Users.swift in Sources */,
 				11BA57712545B80200E432ED /* Metadata.swift in Sources */,
-				1195BEAC2545403F0072EEDE /* Matche.swift in Sources */,
+				1195BEAC2545403F0072EEDE /* Match.swift in Sources */,
 				1195BECC254546DC0072EEDE /* UIHostingController.swift in Sources */,
 				1195BEA32545403F0072EEDE /* MoyaProvider.swift in Sources */,
 				1195BEAB2545403F0072EEDE /* User.swift in Sources */,
