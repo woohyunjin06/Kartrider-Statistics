@@ -1,5 +1,5 @@
 //
-//  Matche.swift
+//  Match.swift
 //  KartriderStats
 //
 //  Created by 현진 on 2020/10/03.
